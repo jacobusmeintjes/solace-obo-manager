@@ -58,7 +58,7 @@ public class Worker : BackgroundService
             requestMessage.Destination = ContextFactory.Instance.CreateTopic("subscriptionRequest");
             // Create the request content as a binary attachment
 
-            var request = new SubscriptionRequest { Username = session.Properties.ClientName };
+            var request = new SubscriptionRequest { ClientName = session.Properties.ClientName };
             requestMessage.BinaryAttachment = Encoding.ASCII.GetBytes(System.Text.Json.JsonSerializer.Serialize(request));
 
             // Send the request message to the Solace messaging router

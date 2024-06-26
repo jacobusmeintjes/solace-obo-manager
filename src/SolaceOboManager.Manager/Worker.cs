@@ -61,7 +61,7 @@ public class Worker : BackgroundService
     {
         var request = System.Text.Json.JsonSerializer.Deserialize<SubscriptionRequest>(Encoding.ASCII.GetString(e.Message.BinaryAttachment));
         var instance = ContextFactory.Instance;
-        var client = instance.CreateClientName(request.Username);
+        var client = instance.CreateClientName(request.ClientName);
 
         var topic = instance.CreateTopic("clientSubscribeTopic");
 

@@ -2,6 +2,6 @@
 {
     public class SubscriptionRequest
     {
-        public string Username { get; set; }
+        public string ClientName { get; set; }
     }
 }
