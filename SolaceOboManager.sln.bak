@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolaceOboManager.Manager", "src\SolaceOboManager.Manager\SolaceOboManager.Manager.csproj", "{C2925AFB-96CC-45CC-9640-E12778E6600D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolaceOboManager.Client", "src\SolaceOboManager.Client\SolaceOboManager.Client.csproj", "{330AAA9F-A2F3-411E-8510-33E37714A0E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolaceOboManager.Producer", "src\SolaceOboManager.Producer\SolaceOboManager.Producer.csproj", "{3C191CE6-F2BB-4B1B-991D-717382932B86}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolaceOboManager.Shared", "src\SolaceOboManager.Shared\SolaceOboManager.Shared.csproj", "{C03F607D-F2C3-433E-8863-00CF706A9C58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolaceOboManager.AppHost", "src\AppHost1\SolaceOboManager.AppHost.csproj", "{91B6B3B9-5820-4B9C-9993-8EC653AB718D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2925AFB-96CC-45CC-9640-E12778E6600D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2925AFB-96CC-45CC-9640-E12778E6600D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2925AFB-96CC-45CC-9640-E12778E6600D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2925AFB-96CC-45CC-9640-E12778E6600D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330AAA9F-A2F3-411E-8510-33E37714A0E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330AAA9F-A2F3-411E-8510-33E37714A0E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330AAA9F-A2F3-411E-8510-33E37714A0E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330AAA9F-A2F3-411E-8510-33E37714A0E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C191CE6-F2BB-4B1B-991D-717382932B86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C191CE6-F2BB-4B1B-991D-717382932B86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C191CE6-F2BB-4B1B-991D-717382932B86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C191CE6-F2BB-4B1B-991D-717382932B86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C03F607D-F2C3-433E-8863-00CF706A9C58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C03F607D-F2C3-433E-8863-00CF706A9C58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C03F607D-F2C3-433E-8863-00CF706A9C58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C03F607D-F2C3-433E-8863-00CF706A9C58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91B6B3B9-5820-4B9C-9993-8EC653AB718D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91B6B3B9-5820-4B9C-9993-8EC653AB718D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91B6B3B9-5820-4B9C-9993-8EC653AB718D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91B6B3B9-5820-4B9C-9993-8EC653AB718D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6DD300C-AB99-4CF0-8A48-2F5578BC47CB}
+	EndGlobalSection
+EndGlobal
