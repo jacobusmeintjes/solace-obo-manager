@@ -85,7 +85,7 @@ public class Worker : BackgroundService
 
     private void messageEventHander(object? sender, MessageEventArgs e)
     {
-        Console.WriteLine(Encoding.ASCII.GetString(e.Message.BinaryAttachment));
+        Console.WriteLine($"{e.Message.Destination.Name} - {Encoding.ASCII.GetString(e.Message.BinaryAttachment)}");
         _messageCount++;
 
         //if(_messageCount > 10)
