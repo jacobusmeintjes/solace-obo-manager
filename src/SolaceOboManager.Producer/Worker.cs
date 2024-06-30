@@ -55,7 +55,8 @@ public class Worker : BackgroundService
                 message.Destination = ContextFactory.Instance.CreateTopic("clientSubscribeTopic");
                 // Create the message content as a binary attachment
                 message.BinaryAttachment = Encoding.ASCII.GetBytes($"Sample Message - {count}");
-
+                
+                message.ElidingEligible = true;
                 // Publish the message to the topic on the Solace messaging router
                 Console.WriteLine($"Publishing message...{count}");
                 returnCode = session.Send(message);

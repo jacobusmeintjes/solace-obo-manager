@@ -15,8 +15,13 @@ public partial class Worker : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
+        await _solaceConfigurationAgent.CreateClientProfile("default", new MsgVpnClientProfile { ClientProfileName = "clientProfile", ElidingEnabled = false, ElidingDelay = 2000 });
+
+        await _solaceConfigurationAgent.CreateAclProfile("default", new MsgVpnAclProfile { AclProfileName = "clientProfile", ClientConnectDefaultAction = "allow" });
+        await _solaceConfigurationAgent.CreatePublishTopicExceptions("default", "clientProfile", new MsgVpnAclProfilePublishTopicException { AclProfileName = "clientProfile", VpnName = "default", PublishTopicException = "subscriptionRequest" });
+
         await _solaceConfigurationAgent.CreateUser("default", new MsgVpnClientUsername { Username = "obomanager", Password = "password", SubscriptionManagerEnabled = true });
-        await _solaceConfigurationAgent.CreateUser("default", new MsgVpnClientUsername { Username = "client", Password = "password" });
+        await _solaceConfigurationAgent.CreateUser("default", new MsgVpnClientUsername { Username = "client", Password = "password", AclProfileName = "clientProfile", ProfileName = "clientProfile" });
         await _solaceConfigurationAgent.CreateUser("default", new MsgVpnClientUsername { Username = "publisher", Password = "password" });
 
 
